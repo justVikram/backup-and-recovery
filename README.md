@@ -1,6 +1,7 @@
 # Backup and Recovery
 
 Scripts to create and upload backups of a directory to Google Drive and retrieve them.
+
 ## About
 
 DCC Course Project, 6th Semester, 2022.
