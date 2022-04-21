@@ -4,7 +4,7 @@ echo "Enter path to directory you wish to backup:"
 read -r path
 echo "Enter name of backup file:"
 read -r file
-tar -czvf $file.tar.gz $path > /dev/null
+/usr/bin/tar -czvf $file.tar.gz $path > /dev/null
 echo "Backup complete!"
 echo "Uploading to Google Drive..."
 
@@ -15,7 +15,7 @@ do
     key=$line
 done < $filename
 
-gdrive upload --delete -p $key $file.tar.gz
+/opt/homebrew/bin/gdrive upload --delete -p $key $file.tar.gz
 if [ $? -eq 0 ]
 then
     
