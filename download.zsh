@@ -9,5 +9,5 @@ do
     key=$line
 done < $filename
 
-gdrive download --recursive $key
+/opt/homebrew/bin/gdrive download --recursive $key
 echo "Download complete!"
